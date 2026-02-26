@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+
+        
+    body {
+        background-image: url('https://www.gwp-ag.com/media/www.gwp-ag.com/media/med_1006/2306_g.w.p._ag_transportation_sebastian_luenenstrass_fotolia_117524744.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0;
+        padding-bottom: 80px;
+    }
+
+    .container >
+     h1 { font-size: 3.5rem; font-weight: 700; }
+
+   
+    .student-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+        .student-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 880px; 
+            margin: 0 auto;   
+            box-sizing: border-box;
+        }
+
+
+    .navbar { background-color: #8B0000 !important; position: relative; }
+    .navbar .nav-link, .navbar .navbar-brand { color: #ffffff !important; }
+    .navbar .nav-link:hover { color: #ffdddd !important; }
+
+ 
+        .student-card {
+            background: #fff;
+            border: 2px solid rgba(0,0,0,0.12);
+            padding: 20px 24px;
+            border-radius: 12px;
+        }
+
+   
+    .student-card h1,
+    .student-card label {
+        width: 100%;
+        text-align: center;
+    }
+
+         .student-card input[type="text"],
+                                                                        .student-card input[type="date"],
+                                                                        .student-card select,
+                                                                        .student-card textarea,
+                                                                        .student-card .form-control,
+                                                                        .student-card .form-select {
+                                                                            max-width: 360px;
+                                                                            width: 100%;
+                                                                            box-sizing: border-box;
+                                                                        }
+            .student-card input[type="text"],
+            .student-card input[type="date"],
+            .student-card select,
+            .student-card textarea,
+            .student-card .form-control,
+            .student-card .form-select {
+               
+                max-width: 100%;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        
+        .btn-send,
+        .btn-display,
+        .btn-choose,
+        .btn-choose[type="button"] {
+            padding: 0.6rem 1.6rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+            display: inline-block;
+            color: #fff;
+            background-color: gray;
+            box-sizing: border-box;
+        }
+        .btn-send { background-color: #0d6efd; }
+        .btn-display { background-color: gray; margin-top: 1rem; }
+        .btn-choose { background-color: gray; margin-top: 0.5rem; }
+                   
+                    .nav-quote {
+                        color: #ffffff;
+                        font-weight: 600;
+                        letter-spacing: 0.2px;
+                        pointer-events: none;
+                        white-space: nowrap;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 2;
+                        font-size: 1rem;
+                        padding: 6px 10px;
+                        border: 2px solid #550000;
+                        border-radius: 6px;
+                    }
+                    @media (max-width: 576px) {
+                        .nav-quote {
+                            position: static;
+                            transform: none;
+                            display: block;
+                            width: 100%;
+                            text-align: center;
+                            font-size: 0.9rem;
+                            padding: 6px 10px;
+                            background: rgba(0,0,0,0.12);
+                            border-radius: 6px;
+                            margin: 6px auto 0 auto;
+                        }
+                    }
+            </style>
+
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo.png" alt="logo" height="50px">  </a>
+            <div class="nav-quote">We get you to your destination at light speed!</div>
+            
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">FARE MATRIX</a></li>
+                    <li class="nav-item"><a class="nav-link" href="enroll.html">SCHEDULE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact us.html">HELP</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+            <div class="container mt-3">
+                <div class="row justify-content-end">
+                    <div class="col-auto">
+                        <select id="page-select" class="form-select" onchange="if(this.value) window.location.href=this.value;">
+                            <option value="">Please choose a page...</option>
+                            <option value="index.html">Home</option>
+                            <option value="Farematrix.html">Fare Matrix</option>
+                            <option value="page1.html">Page 1</option>
+                            <option value="regristration.html">Registration</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+                                        <div class="container">
+                                <h1 class="text-center text-dark">REGRISTRATION</h1>
+                                
+                                <br>
+                                <BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="student-card bg-white p-4 rounded shadow mt-4">
+
+<h1>Information</h1>
+<br>
+<label style="font-weight: bold;font-size: 26px;"  for="fname">First name:</label>
+<br>
+<input type="text" size="35" id="fname" placeholder="Jane">
+
+<br>
+
+
+<label style="font-weight: bold;font-size: 26px;"  for="fname">Last name:</label>
+<br>
+<input type="text" size="35" id="fname" placeholder="Doe">
+
+<br>
+
+<label style="font-weight: bold;font-size: 26px;" for="yemail">Birthday:</label>
+<br>
+<input type="text" size="35" id="yemail" placeholder="jane_doe@gmail.com">
+
+
+<label style="font-weight: bold;font-size: 26px;" for="AGE">Age:</label>
+<br>
+<input type="text" size="35" id="AGE" placeholder="Place age here..">
+
+
+<label style="font-weight: bold;font-size: 26px;" for="Contact">Contact Number:</label>
+<br>
+<input type="text" size="35" id="Contact" placeholder="09182732671..">
+
+
+
+<br>
+<br>
+
+
+
+<label style="font-weight: bold;font-size: 26px;" for="gender">Gender:</label>
+<br>
+<select id="gender" name="gender" class="
+form-select" style="max-width:260px;">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    
+</select>
+
+
+<br>
+
+
+
+
+<br>
+
+<label style="font-weight: bold;font-size: 26px;"  for="fname">Email Adress:</label>
+<br>
+<input type="text" size="35" id="email" placeholder="Janedoe@gmail.com">
+
+
+<br>
+<br>
+
+<label style="font-weight: bold;font-size: 26px;"  for="fname">Contact Number(of parent/gaurdian):</label>
+<br>
+<input type="text" size="35" id="email" placeholder="0917-632-6721">
+
+<br>
+<br>
+
+
+<br>
+
+                        <div class="text-center">
+                            <input type="file" id="fileInput" style="display:none;">
+                            <button id="choose-file-btn" type="button" class="btn-choose">Choose file</button>
+                            <div id="file-name" style="margin-top:0.5rem;color:#333;"></div>
+                        </div>
+
+<br>
+
+<input type="checkbox" id="check1"  name="checkboxgroup">
+    <label for="check1"> I accept the Terms of Use and Privacy Policy</label>
+
+
+
+
+<br>
+<br>
+
+
+
+
+<br>
+<br>
+                     
+
+            <div class="text-center">
+                <button id="create-account-btn" type="button" class="btn btn-send">
+                    Create my account
+                </button>
+            </div>
+                        <div class="text-center">
+                            <button id="display-btn" type="button" class="btn-display">Cancel</button>
+                        </div>
+        </div>
+
+
+
+
+        
+
+
+
+
+
+
+        <script>
+            document.getElementById('create-account-btn').addEventListener('click', function () {
+                const checkbox = document.getElementById('check1');
+                if (checkbox && checkbox.checked) {
+                    window.location.href = 'confirmation.html';
+                } else {
+                    window.alert('Please accept the Terms of Use and Privacy Policy before creating an account.');
+                }
+            });
+
+            const chooseBtn = document.getElementById('choose-file-btn');
+            const fileInput = document.getElementById('fileInput');
+            const fileNameDiv = document.getElementById('file-name');
+
+            if (chooseBtn && fileInput) {
+                chooseBtn.addEventListener('click', function () { fileInput.click(); });
+                fileInput.addEventListener('change', function (e) {
+                    const f = e.target.files[0];
+                    if (fileNameDiv) fileNameDiv.textContent = f ? f.name : '';
+                });
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <footer style="background: rgba(0,0,0,0.6); color:#fff; text-align:center; padding:12px; position:fixed; bottom:0; width:100%; z-index:3;">
+        Kyle Dela Calzada, Joaquin Galura, Briel Lagran | 9 Emerald ©2026
+    </footer>
+
+    </div>
+    </body>
+    </html>
